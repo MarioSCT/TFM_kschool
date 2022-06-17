@@ -20,4 +20,8 @@ Carpeta que contiene los jupyter notebooks, AddData que se utilizo al principio 
 
 * flask_tfm:
 
-Carpeta en la que se encuentra la web app de flask
+Carpeta en la que se encuentra la web app de flask.
+
+* Memoria
+
+Memoria del proyecto.
