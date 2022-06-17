@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="titulo">Probabilidad de victoria del Blue team:</div>
+<div id="carouselExampleControls" class="carousel slide center" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div id="plotly-timeseries0"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries1"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries2"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries3"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries4"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries5"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries6"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries7"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries8"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries9"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries10"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries11"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries12"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries13"></div>
+    </div>
+    <div class="carousel-item">
+      <div id="plotly-timeseries14"></div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev indicator" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next indicator" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="parrafo" id="prf"></div>
+
+{% for i in range(0,imagenes|length) %}
+    <script>
+        var graph = {{ imagenes[i] | safe }};
+        Plotly.plot('plotly-timeseries{{i}}', graph, {});
+    </script>
+{% endfor %}
+{% for i in range(0,mensaje|length) %}
+   <script>
+       var div = document.getElementById('prf');
+       div.innerHTML += '{{mensaje[i]}}<br>';
+   </script>
+{% endfor %}
+
+
+<style>
+    .center{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    body{
+        background-color:#23272A
+    }
+    .indicator{
+        top: 60%
+    }
+    .titulo{
+      margin: 0;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 30px;
+    }
+    .parrafo{
+      margin: 0;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      height: 150px;
+      color: white;
+    }
+</style>
+</body>
+</html>

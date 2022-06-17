@@ -1,0 +1,137 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MarioSCT App</title>
+      <script src="https://kit.fontawesome.com/14a5775af0.js" crossorigin="anonymous"></script>
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   </head>
+<html>
+ <body>
+<div class="container-fluid" id="formucont">
+	 <form action="" id="myForm" class="center" method="post">
+         <label style="color:white;font-size:20px">GameID:</label><br><br>
+         <input type="text" name="gameid" id="gameid" style="font-size:20px" size="15"><br><br>
+         <input type="text" name="minute" id="minute" style="display:none">
+         <button type="submit" style="background-color:#926AA6;font-size:20px;color:white">Search</button>
+  </form>
+</div>
+ <style>
+    body{
+        background-color:#23272A
+    }
+    .center{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .fc-daygrid-day-number{
+        color:white;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    .fc-day{
+         background-color:#2C2F33
+    }
+    .fc-col-header-cell{
+        background-color:#23272A;
+    }
+    .fc-col-header-cell-cushion{
+        color:white;
+        text-decoration: none;
+        pointer-events: none;
+    }
+
+ .navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    background: #2C2F33;
+    box-shadow: 10px 0 0 #926AA6;
+    border-left: 10px solid #2C2F33;
+    overflow-x: hidden;
+}
+.navigation:hover{
+    width: 30vh;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul li.active{
+    background: #926AA6;
+}
+.navigation ul li.active a::before{
+    content: ' ';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2C2F33;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #926AA6;
+}
+.navigation ul li.active a::after{
+    content: ' ';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2C2F33;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #926AA6;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center
+}
+.navigation ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+.navigation ul li a .title{
+ position: relative;
+ display: block;
+ padding-left: 10px;
+ height: 60px;
+ line-height: 60px;
+ white-space: nowrap;
+}
+  </style>
+</body>
+</html>
