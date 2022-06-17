@@ -14,10 +14,10 @@ Ser capaces de predecir el resultado de cualquier partida que introduzca el usua
 
 Contiene las instrucciones y los paquetes/dependencias que hay que instalar.
 
-*AddData.ipynb & main.ipynb:
+* AddData.ipynb & main.ipynb:
 
 Jupyter notebooks, el primero trata sobre la obtención de datos y el segundo sobre el analisis/conclusiones.
 
-*flask_tfm:
+* flask_tfm:
 
 Carpeta en la que se encuentra la web app de flask
