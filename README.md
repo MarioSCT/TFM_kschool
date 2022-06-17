@@ -14,9 +14,9 @@ Ser capaces de predecir el resultado de cualquier partida que introduzca el usua
 
 Contiene las instrucciones y los paquetes/dependencias que hay que instalar.
 
-* AddData.ipynb & main.ipynb:
+* src:
 
-Jupyter notebooks, el primero trata sobre la obtención de datos y el segundo sobre el analisis/conclusiones.
+Carpeta que contiene los jupyter notebooks, AddData que se utilizo al principio para obtener datos y main que contiene el analisis/conclusiones de los datos.
 
 * flask_tfm:
 
