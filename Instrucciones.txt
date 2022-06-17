@@ -1,0 +1,43 @@
+------- Paquetes necesarios que tendremos que instalar ---------
+
+- Para los notebooks (Instalar en la carpeta donde esten los notebook)
+
+pip install ipython
+pip install plotly
+pip install pandas
+pip install sklearn
+pip install requests
+pip install numpy
+pip install matplotlib
+pip install lightgbm
+pip install seaborn
+
+- Para la aplicación Flask (Instalar en la carpeta flask_tfm)
+
+pip install flask
+pip install plotly
+pip install pandas
+pip install numpy
+pip install lightgbm
+
+
+------- Instrucciones archivos de Drive ---------
+
+1) Debereis acceder al siguiente enlace para ir a drive:
+
+https://drive.google.com/drive/folders/1E7uPThUp8xFGfspr357BM9jLkvkfczsG?usp=sharing
+
+2) Una vez descargados los archivos, se deberan colocar en la misma carpeta que el codigo de jupyter notebook.
+
+
+------- Instrucciones Flask app ---------
+
+1) Descargar la carpeta "flask_tfm", en la que se encuentra nuestra aplicación flask con la UI.
+
+2) Colocar la carpeta donde queramos tener la aplicación.
+
+3) Abrir una terminal en la carpeta "flask_tfm"
+
+4) Escribiremos en la terminal "flask run" para iniciar la aplicación en localhost
+
+5) Iremos a la ruta "/tfm/all/all" para empezar a usar la aplicación
